@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+<!--    <menuitem id="booking_statistics_menu"-->
+<!--        name="課程統計"-->
+<!--        action="booking_statistics_action"-->
+<!--        sequence="1"/>-->
+
+</odoo>

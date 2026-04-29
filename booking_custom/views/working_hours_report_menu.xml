@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <menuitem id="working_hours_report_menu"
+              name="課程工時統計"
+              action="working_hours_report_action"
+              sequence="1"/>
+
+</odoo>

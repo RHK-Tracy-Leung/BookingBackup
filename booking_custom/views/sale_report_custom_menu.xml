@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+
+    <menuitem id="sale_report_custom_menu"
+              name="課程統計"
+              action="sale_report_custom_action"
+              sequence="1"/>
+
+</odoo>

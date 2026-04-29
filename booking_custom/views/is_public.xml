@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="add_user_role_to_odoo_var" inherit_id="website.layout"
+        name="Add User Role to Odoo Var">
+        <xpath expr="//head" position="inside">
+            <script type="text/javascript" id="user_role_flag">
+            odoo = window.odoo || {};
+            odoo.isAdmin = <t t-esc="request.env.user.has_group('base.group_system') and 'true' or 'false'" />;
+            odoo.isPublic = <t t-esc="request.env.user._is_public() and 'true' or 'false'" />;
+            odoo.portalUser = <t t-esc="request.env.user.has_group('base.group_portal') and 'true' or 'false'" />
+            odoo.isUser = <t t-esc="(not request.env.user._is_public() and not request.env.user.has_group('base.group_system')) and 'true' or 'false'" />;
+        </script>
+        </xpath>
+    </template>
+
+</odoo>
